@@ -33,7 +33,8 @@ int main()
 		auto const monthly_payment = total_loan_amount / loan_duration_months;
 
 		std::cout << std::format("The total amount of your loan (including interest at {}%) is ${}.\n", interest_rate, total_loan_amount);
-		std::cout << std::format("Your monthly payment for {} months will be ${:.2f}.\n", loan_duration_months, monthly_payment);
+		std::cout << std::format("Your monthly payment for {} months will be ${:.2f}.\n\n", loan_duration_months, monthly_payment);
 	}
-	
+
+	return 0;
 }
